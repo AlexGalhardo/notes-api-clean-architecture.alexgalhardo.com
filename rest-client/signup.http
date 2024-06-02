@@ -1,4 +1,5 @@
 POST http://localhost:3000/api/signup
+# POST https://notes-api-clean-architecture.alexgalhardo.com/api/signup
 Content-Type: application/json
 
 {

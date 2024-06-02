@@ -1,1 +1,2 @@
 GET http://localhost:3000
+# GET https://notes-api-clean-architecture.alexgalhardo.com/

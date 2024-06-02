@@ -1,12 +1,13 @@
 PUT http://localhost:3000/api/notes/665c6a18e3ccd36b3bcbb2ef
+# PUT https://notes-api-clean-architecture.alexgalhardo.com/api/notes/665c83308c1b1ae210526cf7
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWM2MzEyOTk2OWZhNWFiNTFmNmIwOCIsImlhdCI6MTcxNzMzMTU1NywiZXhwIjoxNzE5OTIzNTU3fQ.2LwPjzgNpkMT6tUGGRx5QyqIM4Ua_oP6iRJJ0kY6a-M
-User-Agent: 665c63129969fa5ab51f6b08
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWM4Mjc3OGMxYjFhZTIxMDUyNmNmNCIsImlhdCI6MTcxNzMzODc0NSwiZXhwIjoxNzE5OTMwNzQ1fQ.e2Y-wwx6B38BblaCL7RnrbCFEqc9GAv8BZjbz2LGGOs
+User-Agent: 665c82778c1b1ae210526cf4
 
 {
-	"id": "665c6a18e3ccd36b3bcbb2ef",
+	"id": "665c83308c1b1ae210526cf7",
 	"ownerEmail": "test@gmail.com",
-	"ownerId": "665c63129969fa5ab51f6b08",
-	"title": "my notes title 5 updated",
-	"content": "my notes content updated"
+	"ownerId": "665c82778c1b1ae210526cf4",
+	"title": "my notes title 3 updated",
+	"content": "my notes content 3 updated"
 }
