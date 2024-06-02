@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWM2MzEyOTk2OWZhNWFiNTFmNmIwOCIsImlhdCI6MTcxNzMzMTU1NywiZXhwIjoxNzE5OTIzNTU3fQ.2LwPjzgNpkMT6tUGGRx5QyqIM4Ua_oP6iRJJ0kY6a-M
+User-Agent: 665c63129969fa5ab51f6b08
+
+{
+	"ownerEmail": "test@gmail.com",
+	"title": "my notes title 4",
+	"content": "my notes content"
+}

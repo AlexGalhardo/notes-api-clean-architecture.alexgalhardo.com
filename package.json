@@ -1,0 +1,44 @@
+{
+	"name": "notes-api-clean-architecture",
+	"scripts": {
+		"dev": "bun run --watch src/main/server.ts",
+		"start": "bun run build && node dist/main/server.js",
+		"build": "rimraf dist && tsc -p tsconfig-build.json",
+		"test:unit": "jest --passWithNoTests --watch --runInBand -c jest-unit.config.js",
+		"test:integration": "jest --passWithNoTests --watch --runInBand -c jest-integration.config.js",
+		"test:ci": "jest --passWithNoTests --runInBand --coverage",
+		"generate:api:doc": "rimraf api-doc.json && cross-env GENERATE_DOC=true jest --runInBand routes && bun run src/doc/finalize-doc.ts",
+		"prepare": "husky install",
+		"format": "prettier --write \"src/**/*.ts\""
+	},
+	"dependencies": {
+		"@types/jsonwebtoken": "^9.0.6",
+		"@types/mongodb": "^4.0.7",
+		"bcrypt": "^5.1.1",
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"jsonwebtoken": "^9.0.2",
+		"module-alias": "^2.2.3",
+		"mongodb": "^6.7.0",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"@shelf/jest-mongodb": "^4.3.2",
+		"@types/bcrypt": "^5.0.2",
+		"@types/express": "^4.17.21",
+		"@types/jest": "^29.5.12",
+		"@types/morgan": "^1.9.9",
+		"@types/sinon": "^17.0.3",
+		"@types/supertest": "^6.0.2",
+		"git-commit-msg-linter": "^5.0.8",
+		"husky": "^9.0.11",
+		"jest": "^29.7.0",
+		"rimraf": "^5.0.7",
+		"sinon": "^18.0.0",
+		"supertest": "^7.0.0",
+		"ts-jest": "^29.1.4",
+		"typescript": "^5.4.5",
+		"prettier": "^3.3.0"
+	}
+}

@@ -1,0 +1,330 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "API",
+		"description": "API endpoints.",
+		"version": "1.0.0"
+	},
+	"basePath": "/",
+	"schemes": [
+		"http"
+	],
+	"paths": {
+		"/api/notes/665c7ae10af6784caea14923 3sqovd": {
+			"delete": {
+				"description": "Remove note route should be able to remove existing note for valid user",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {}
+						}
+					}
+				}
+			}
+		},
+		"/api/notes/665c7ae10af6784caea14923 7y4b0b": {
+			"delete": {
+				"description": "Remove note route should not be able to remove existing note for another user",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {}
+						}
+					}
+				],
+				"responses": {
+					"403": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"error": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/signup 0o6n88": {
+			"post": {
+				"description": "Signup route should return access token and id on success",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"email": {
+									"type": "string"
+								},
+								"password": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"201": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"accessToken": {
+									"type": "string"
+								},
+								"id": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/signin xdtrow": {
+			"post": {
+				"description": "Signin route should successfully sign in with valid user",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"email": {
+									"type": "string"
+								},
+								"password": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"accessToken": {
+									"type": "string"
+								},
+								"id": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/notes/665c7ae3170fd281413b26fb 2ijdvo": {
+			"put": {
+				"description": "Update note route should be able to update title of existing note for valid user",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"id": {
+									"type": "string"
+								},
+								"title": {
+									"type": "string"
+								},
+								"ownerEmail": {
+									"type": "string"
+								},
+								"ownerId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"title": {
+									"type": "string"
+								},
+								"content": {
+									"type": "string"
+								},
+								"ownerEmail": {
+									"type": "string"
+								},
+								"ownerId": {
+									"type": "string"
+								},
+								"id": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/notes/665c7ae3170fd281413b26fb az358f": {
+			"put": {
+				"description": "Update note route should be able to update content of existing note for valid user",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"id": {
+									"type": "string"
+								},
+								"content": {
+									"type": "string"
+								},
+								"ownerEmail": {
+									"type": "string"
+								},
+								"ownerId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"title": {
+									"type": "string"
+								},
+								"content": {
+									"type": "string"
+								},
+								"ownerEmail": {
+									"type": "string"
+								},
+								"ownerId": {
+									"type": "string"
+								},
+								"id": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/notes/ zjh5lp": {
+			"get": {
+				"description": "Load notes route should be able to load notes for valid user",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {}
+						}
+					}
+				}
+			}
+		},
+		"/api/notes aqop52": {
+			"post": {
+				"description": "Create note route should be able to create note for valid user",
+				"parameters": [
+					{
+						"in": "body",
+						"name": "",
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"title": {
+									"type": "string"
+								},
+								"content": {
+									"type": "string"
+								},
+								"ownerEmail": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"201": {
+						"description": "",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"title": {
+									"type": "string"
+								},
+								"content": {
+									"type": "string"
+								},
+								"ownerEmail": {
+									"type": "string"
+								},
+								"ownerId": {
+									"type": "string"
+								},
+								"id": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

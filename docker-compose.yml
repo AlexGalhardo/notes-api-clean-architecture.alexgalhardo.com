@@ -1,0 +1,16 @@
+services:
+  mongodb:
+    container_name: mongodb_clean_architecture
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: mongodb_clean_architecture
+    ports:
+      - 27017:27017
+    networks:
+      - network
+
+networks:
+    network:
+        driver: bridge
