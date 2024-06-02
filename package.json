@@ -2,7 +2,7 @@
 	"name": "notes-api-clean-architecture",
 	"scripts": {
 		"dev": "bun run --watch src/main/server.ts",
-		"start": "bun run build && node dist/main/server.js",
+		"start": "bun run build && bun dist/main/server.js",
 		"build": "rimraf dist && tsc -p tsconfig-build.json",
 		"test:unit": "jest --passWithNoTests --watch --runInBand -c jest-unit.config.js",
 		"test:integration": "jest --passWithNoTests --watch --runInBand -c jest-integration.config.js",
