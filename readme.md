@@ -9,6 +9,7 @@
 - This is a updated version of the original:
    - Source code reference: <https://github.com/otaviolemos/thewisepad-core>
    - From the book/course: <https://www.otaviolemos.com.br/>
+- This code is a great reference to learn tests and clean architecture principles
 
 ## Development Setup Local
 
@@ -40,7 +41,22 @@ bun run start
 ```
 
 ## Tests
--
+Unit Tests:
+```bash
+bun run test:unit
+```
+
+Integration Tests:
+```bash
+bun run test:integration
+```
+
+Coverage Tests:
+```bash
+bun run test:ci
+```
+
+![notes-api-clean-architecture](https://github.com/AlexGalhardo/notes-api-clean-architecture.alexgalhardo.com/assets/19540357/b6b743bc-0d92-4137-895b-b32836c79730)
 
 ## API
 - You can use the HTTP Requests references inside folder [./rest-client/](./rest-client/)
