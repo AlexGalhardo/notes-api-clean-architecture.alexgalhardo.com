@@ -1,5 +1,5 @@
 {
-	"name": "notes-api-clean-architecture",
+	"name": "notes-api-clean-architecture.alexgalhardo.com",
 	"scripts": {
 		"dev": "bun run --watch src/main/server.ts",
 		"start": "bun run build && bun dist/main/server.js",
